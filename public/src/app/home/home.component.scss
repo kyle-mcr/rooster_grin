@@ -1,0 +1,87 @@
+/* header background image */
+#golden_gate {
+  width: 100%;
+  height: auto;
+}
+/* Top left logo positioning */
+.top_left {
+  position: absolute;
+  top: 5%;
+  left: 12%;
+}
+/* Top left logo size */
+#logo_white {
+  width: 90%;
+}
+/* welcome message div placement */
+.centered {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+/* Welcome To - text style */
+#welcome {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  color: transparent;
+  font-weight: 900;
+  margin: 0px;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+  display: block;
+}
+/* Rooster Grin text style */
+#rooster_grin {
+  font-size: 42px;
+  margin: 0px;
+  letter-spacing: 7px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+/* Custom purple button */
+#purple_button {
+  background-color: rgb(179, 93, 250);
+  border: transparent;
+  margin-top: 11%;
+  border-radius: 1%;
+  padding: 9px;
+}
+/* container for the grid */
+.container{
+  padding: 0px;
+  margin:0px;
+  min-width:100%;
+}
+
+.row{
+  width:100%;
+}
+.col{
+  padding:0px;
+}
+/* all images other than golden gate */
+.banner{
+  width: 100%;
+  height: auto;
+}
+
+#text_container{
+  padding:10% 5% 10% 15%;
+}
+
+.content{
+  font-size: 12px;
+}
+
+.title{
+  color: rgb(109, 30, 109);
+}
+
+#dropdown{
+  font-weight: bold;
+}
