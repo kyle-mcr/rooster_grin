@@ -69,19 +69,52 @@
   width: 100%;
   height: auto;
 }
-
+/* container for all of the text on the split rows */
 #text_container{
   padding:10% 5% 10% 15%;
 }
 
+/* paragraph style  */
 .content{
   font-size: 12px;
 }
 
+/* titles of all rows */
 .title{
   color: rgb(109, 30, 109);
 }
 
+/* the footer of the text in each row > */
 #dropdown{
   font-weight: bold;
+}
+
+/* container for the first banner */
+.banner_text{
+  position: absolute;
+  width:25%;
+  top: 40%;
+  left: 20%;
+}
+
+/* container for the second banner */
+.banner_text2{
+  position: absolute;
+  width:27%;
+  top: 30%;
+  right: 13%;
+}
+
+/* Custom orange button */
+#orange_button {
+  background-color: rgb(255, 120, 67);
+  border: transparent;
+  border-radius: 1%;
+  padding: 9px;
+  width: 45%;
+}
+
+/* column div for the two banners */
+#relative_div{
+  position: relative;
 }
