@@ -16,11 +16,29 @@
 /* welcome message div placement */
 .centered {
   position: absolute;
-  top: 36%;
-  left: 50%;
+  width: 50%;
+  top: 30%;
+  left: 25%;
   text-align: center;
-  transform: translate(-50%, -50%);
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* div container for top header */
+.header {
+  position: relative;
+}
+
 /* Welcome To - text style */
 #welcome {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -45,11 +63,13 @@
 
 /* Custom purple button */
 #purple_button {
-  background-color: rgb(179, 93, 250);
+  background-color: rgb(174, 93, 250);
   border: transparent;
-  margin-top: 11%;
+  margin-top: 5%;
   border-radius: 1%;
   padding: 9px;
+  width: 30%;
+  font-size: 13px;
 }
 /* container for the grid */
 .container {
@@ -89,12 +109,27 @@
 }
 
 /* paragraph style  */
-.content {
+.content,
+.content3,
+.content6 {
+  font-size: 12px;
+}
+
+.content2,
+.content4,
+.content5,
+.content7 {
+  display: none;
   font-size: 12px;
 }
 
 /* titles of all rows */
 .title {
+  color: rgb(109, 30, 109);
+}
+
+.read_more,
+.read_more2 {
   color: rgb(109, 30, 109);
 }
 
@@ -120,12 +155,13 @@
 }
 
 /* Custom orange button */
-#orange_button {
+#orange_button,
+#orange_button2 {
   background-color: rgb(255, 120, 67);
   border: transparent;
   border-radius: 1%;
   padding: 9px;
-  width: 45%;
+  width: 60%;
 }
 
 /* column div for the two banners */
@@ -198,33 +234,182 @@
 }
 
 /* logo icons */
-.home_logos{
-  width:40%;
+.home_logos {
+  width: 40%;
   border: 1px solid purple;
   border-radius: 50%;
   margin-left: 30%;
-
 }
 
 /* containers for icons */
-#logo_container{
-  margin:12% 20% 10% 20%;
-  width:50%;
+#logo_container {
+  margin: 12% 20% 10% 20%;
+  width: 50%;
 }
 
 /* icons column/row div */
-#logos_column{
-  background-color:#F8F9FA
+#logos_column {
+  background-color: #f8f9fa;
 }
 
 /* icons div containing icon and text */
-#logo_box{
+#logo_box {
   display: inline-block;
-  width:50%;
+  width: 50%;
 }
 
 /* text below each icon */
-.logo_text{
+.logo_text {
   text-align: center;
-  margin-top:5%;
+  margin-top: 5%;
+}
+
+/* icons animation */
+#logo_box:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+$color: rgb(148, 83, 179);
+
+#purple_button {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($color, 15%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+#dropdown:hover {
+  color: orange;
+}
+
+$color: rgb(255, 115, 0);
+
+#orange_button,
+#orange_button2 {
+  padding: 0.75rem 1.25rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color;
+    z-index: -2;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: darken($color, 15%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+/* social icons animation */
+.social_icons:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }

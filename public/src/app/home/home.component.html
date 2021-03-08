@@ -17,8 +17,9 @@
     <div class="centered">
       <h1 id="welcome">WELCOME TO</h1>
       <h1 id="rooster_grin">Rooster Grin</h1>
-      <button type="button" class="btn btn-secondary col-6 mx-auto" id="purple_button">
-        CHECK OUT
+      <button type="button" class="btn btn-secondary col-6 mx-auto" id="purple_button" dest="projects"
+        (click)="goToDestination('col_1')">
+        Our Mission
       </button>
     </div>
   </div>
@@ -35,7 +36,14 @@
           eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
           qui dolorem ipsum quia dolor sit amet.
         </p>
-        <h6 class="title" id="dropdown">> Lorem Ipsum</h6>
+        <p class="content2">
+          Qveritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+          qui dolorem ipsum quia dolor sit amet.
+        </p>
+        <a class="read_more" id="dropdown">> Read More</a>
       </div>
       <div class="col">
         <img class="banner" id="small_img" src="../../assets/images/img-1.jpg" />
@@ -48,16 +56,22 @@
         <div class="banner_text">
           <h2 class="title">LOREM IPSUM</h2>
           <button type="button" class="btn btn-secondary col-6 mx-auto" id="orange_button">
-            CHECK OUT
+            Learn More
           </button>
+          <p class="content5">
+            Qveritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet.
+          </p>
         </div>
       </div>
     </div>
-
     <div class="row row-cols-2">
       <div class="col" id="text_container">
         <h1 class="title">LOREM IPSUM</h1>
-        <p class="content">
+        <p class="content3">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
           quae ab illo inventore veritatis et quasi architecto beatae vitae
@@ -66,56 +80,59 @@
           eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
           qui dolorem ipsum quia dolor sit amet.
         </p>
-        <h6 class="title" id="dropdown">> Lorem Ipsum</h6>
+        <p class="content4">
+          Qveritatis et quasi architecto beatae vitae
+          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+          aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+          eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+          qui dolorem ipsum quia dolor sit amet.
+        </p>
+        <a class="read_more2" id="dropdown">> Read More</a>
       </div>
-
-
-
       <div class="col" id="logos_column">
         <div id="logo_container">
           <div id="logo_box">
-        <img class="home_logos" src="../../assets/images/home-expertise.svg" />
-        <h6 class="logo_text">LOREM </h6>
-      </div>
-      <div id="logo_box">
-        <img class="home_logos" src="../../assets/images/home-hygiene.svg" />
-        <h6 class="logo_text">LOREM IPSUM</h6>
-      </div>
-      </div>
+            <img class="home_logos" src="../../assets/images/home-expertise.svg" />
+            <h6 class="logo_text">LOREM </h6>
+          </div>
+          <div id="logo_box">
+            <img class="home_logos" src="../../assets/images/home-hygiene.svg" />
+            <h6 class="logo_text">LOREM IPSUM</h6>
+          </div>
+        </div>
         <div id="logo_container">
           <div id="logo_box">
-        <img class="home_logos" src="../../assets/images/home-lab.svg" />
-        <h6 class="logo_text">LOREM IPSUM</h6>
-      </div>
-      <div id="logo_box">
-        <img class="home_logos" src="../../assets/images/home-retention.svg" />
-        <h6 class="logo_text">LOREM </h6>
-      </div>
-      </div>
+            <img class="home_logos" src="../../assets/images/home-lab.svg" />
+            <h6 class="logo_text">LOREM IPSUM</h6>
+          </div>
+          <div id="logo_box">
+            <img class="home_logos" src="../../assets/images/home-retention.svg" />
+            <h6 class="logo_text">LOREM </h6>
+          </div>
+        </div>
       </div>
     </div>
-
-
-
-
-
     <div class="row row-cols-1">
       <div class="col" id="relative_div">
         <img class="banner" src="../../assets/images/banner-2.jpg" />
         <div class="banner_text2">
           <h2 class="title">LOREM IPSUM</h2>
-          <p class="content">
+          <p class="content6">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae ab illo inventore veritat istotam rem aperiam eaque.
           </p>
-          <button type="button" class="btn btn-secondary col-6 mx-auto" id="orange_button">
-            CHECK OUT
+          <p class="content7">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritat istotam rem aperiam eaque.
+          </p>
+          <button type="button" class="btn btn-secondary col-6 mx-auto" id="orange_button2">
+            Learn More
           </button>
         </div>
       </div>
     </div>
-
     <div class="row row-cols-2">
       <div class="col" id="text_container_bottom_left">
         <h3 class="title" id="title_bottom">LOREM IPSUM DOLOR SIT AMET</h3>
@@ -127,7 +144,6 @@
           <i class="fas fa-star"></i>
         </div>
       </div>
-
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -197,8 +213,10 @@
     <footer id="sticky-footer" class="py-4 bg-light text-black-20">
       <div class="container text-center">
         <p>Follow Us:</p>
-        <img class="social_icons" src="../../assets/images/instagram.svg" />
-        <img class="social_icons" src="../../assets/images/facebook.svg" />
+        <a id="a1" href="https://www.instagram.com/roosterswings/" target="_blank"><img class="social_icons"
+            src="../../assets/images/instagram.svg" /></a>
+        <a id="a1" href="https://www.facebook.com/RoosterTFeathers/" target="_blank"><img class="social_icons"
+            src="../../assets/images/facebook.svg" /></a>
       </div>
     </footer>
   </div>
