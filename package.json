@@ -10,7 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.6.0"
+    "angular-cli-ghpages": "^1.0.0-rc.1",
+    "jquery": "^3.6.0",
+    "save-dev": "0.0.1-security"
   },
   "devDependencies": {
     "@types/jquery": "^3.5.5"

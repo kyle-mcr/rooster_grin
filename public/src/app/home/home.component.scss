@@ -413,3 +413,128 @@ $color: rgb(255, 115, 0);
     transform: translate3d(4px, 0, 0);
   }
 }
+
+@media only screen and (max-width: 600px){
+  /* header background image */
+#golden_gate, .banner {
+  width: 100%;
+  height: 500px;
+}
+
+#large_image{
+  width: 100%;
+  height: 400px;
+  object-fit: cover
+}
+.content6, .content7, .content5{
+  background-color: rgba(255, 255, 255, 0.404);
+}
+/* Top left logo positioning */
+.top_left {
+  position: absolute;
+  top: 5%;
+  left: 12%;
+}
+/* Top left logo size */
+#logo_white {
+  width: 100%;
+}
+/* welcome message div placement */
+.centered {
+  position: absolute;
+  width: 90%;
+  top: 30%;
+  left: 5%;
+  text-align: center;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/* Custom purple button */
+#purple_button {
+  background-color: rgb(174, 93, 250);
+  border: transparent;
+  margin-top: 5%;
+  border-radius: 1%;
+  padding: 9px;
+  width: 90%;
+  font-size: 13px;
+}
+*{
+  border:1px solid red;
+}
+
+#realtive_div{
+  height:100%;
+}
+
+.banner_text{
+  position: absolute;
+  width: 90%;
+  top: 5%;
+  left: 5%;
+}
+#orange_buttonn{
+  width:100%;
+}
+
+/* container for the second banner */
+.banner_text2 {
+  position: absolute;
+  width: 90%;
+  top: 5%;
+  right: 5%;
+}
+
+#text_container{
+  width:200%;
+
+}
+
+/* logo icons */
+.home_logos {
+  width: 40%;
+  border: 1px solid purple;
+  border-radius: 50%;
+  margin-left: 30%;
+}
+
+/* containers for icons */
+#logo_container {
+  margin: 12% 20% 10% 5%;
+  width: 90%;
+}
+
+/* icons column/row div */
+#logos_column {
+  background-color: #f8f9fa;
+}
+
+/* icons div containing icon and text */
+#logo_box {
+  display: inline-block;
+  width: 90%;
+  margin-top: 15%;
+}
+
+/* text below each icon */
+.logo_text {
+  text-align: center;
+  margin-top: 10%;
+}
+.title, .conten3{
+  width: 90%;
+  padding: 0px;
+}
+/* every star */
+.fas {
+  display:none;
+}
+.social_icons{
+  width:10%;
+}
+#sticky_footer{
+  padding: 0px;
+}
+}
+
